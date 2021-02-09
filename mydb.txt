@@ -1,0 +1,82 @@
+drop database if exists playerdb;
+
+create database playerdb
+
+	default character set utf8
+
+	collate utf8_general_ci;
+
+
+use playerdb;
+
+
+set names utf8;
+
+
+create table player(
+
+	id int(100) not null auto_increment,
+
+	name varchar(255),
+
+	team varchar(255),
+
+	image varchar(255),
+
+
+	primary key (id)
+
+)	engine= InnoDB
+
+
+	default character set utf8
+
+	collate utf8_general_ci;
+
+
+set names euckr;
+
+
+insert into player values (
+
+null,"에덴 아자르","첼시","images/hazard.jpg");
+
+insert into player values (
+
+null,"데 리흐트","유벤투스","images/deligt.jpg");
+
+insert into player values (
+
+null,"마우로 이카르디","파리 생제르망","images/icardi.jpg");
+
+insert into player values (
+
+null,"사디오 마네","리버풀","images/mane.jpg");
+
+insert into player values (
+
+null,"모하메드 살라","리버풀","images/salah.jpg");
+
+insert into player values (
+
+null,"박지성","맨유","images/park.jpg");
+
+insert into player values (
+
+null,"황희찬","잘츠부르크","images/hwang.jpg");
+
+insert into player values (
+
+null,"제이미 바디","레스터 시티","images/vardy.jpg");
+
+insert into player values (
+
+null,"호날두","유벤투스","images/ronaldo.jpg");
+
+insert into player values (
+
+null,"손흥민","토트넘","images/son.jpg");
+
+
+
+select * from player;
